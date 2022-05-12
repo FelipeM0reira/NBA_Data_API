@@ -22,9 +22,9 @@ def get_currentScoreboard():
 
         print("#########################################\n")
         print(
-            f"Arena: {arena['name']} City: {arena['city']} Date: {game['startDateEastern']} ")
+            f"Estadio: {arena['name']}; Cidade: {arena['city']}; Data: {game['startDateEastern']} ")
         print(f"{home_team['triCode']} vs {away_team['triCode']}")
-        print(f"SCORE: {home_team['score']} x {away_team['score']}")
+        print(f"Placar: {home_team['score']} x {away_team['score']}")
         print(f"{clock} - {period['current']}\n")
 
 
@@ -36,7 +36,7 @@ def get_teams_stats():
     teams = list(filter(lambda x: x["name"] != "Team", teams))
     teams.sort(key=lambda x: int(x["ppg"]["rank"]))
 
-    print("Regular Season")
+    print("Temporada Regular")
     for team in teams:
         team_name = team["name"]
         nickname = team["nickname"]
