@@ -22,7 +22,11 @@ def get_currentScoreboard():
 
         print("#########################################\n")
         print(
+<<<<<<< HEAD
             f"Estadio: {arena['name']}; Cidade: {arena['city']}; Data: {game['startDateEastern']} ")
+=======
+            f"Arena: {arena['name']} City: {arena['city']} Date: {game['startDateEastern']} ")
+>>>>>>> 6d966e21a38d60d889d7866549ac942d6538208c
         print(f"{home_team['triCode']} vs {away_team['triCode']}")
         print(f"Placar: {home_team['score']} x {away_team['score']}")
         print(f"{clock} - {period['current']}\n")
